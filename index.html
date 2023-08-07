@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="assets/th.webp" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="nav">
+                <a href="#"><img src="imagenes/th.webp" alt="Pokedex" id="icon"></a>
+                <h1 id="title">Pokedex</h1>
+                <div class="buscar">
+                    <button class="boton" id="cancelar" type="submit" onclick="cancelar()">
+                        <span class="material-symbols-outlined close">&times;</span>
+                    </button>
+                    <input type="text" id="name" placeholder="Nombre del Pokemon">
+                    <button class="boton" type="submit" onclick="buscar()">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="repositorio-tarjetas" id="repositorio-tarjetas"></div>
+        <div id="miModal" class="modal">
+            <div class="modal-content" id="modal-content">
+              <span class="close boton" id="close">&times;</span>
+              <h2 id="modal_name">Título del modal</h2>
+              <div class="info" id="info">
+                  <div class="subcontenedor_izquierdo">
+                    <img id="imagen">
+                  </div>
+                  <div class="subcontenedor_derecho">
+                    <h3>Habilidades:</h3>
+                    <div id="habilidades"></div>
+                    <h3>Movimientos:</h3>
+                    <div id="movimientos"></div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
